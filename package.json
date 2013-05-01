@@ -1,0 +1,30 @@
+{
+  "name": "makeitso",
+  "version": "0.0.0",
+  "description": "Watcher that runs make on file changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+
+    "colors" : ">= 0.6.0",
+    "watch" : ">= 0.7.0"
+  },
+  "repository": "",
+  "keywords": [
+    "tools",
+    "watcher"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/divanvisagie/make-it-so"
+  },
+  "bin": {
+    "makeitso" : "index.js"
+  },
+  "preferGlobal": "true",
+  "author": "Divan Visagie",
+  "license": "MIT",
+  "readmeFilename": "Readme.md"
+}
