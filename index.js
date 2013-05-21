@@ -11,8 +11,10 @@ var ignores = args.reduce(function(state, arg) {
   return {
     ignores: state.include ? state.ignores.concat(arg) : state.ignores,
     include: arg === "--ignore"
-  }
-}, { ignores: [], include: false }).ignores.map(path.resolve);
+  };
+}, { ignores: [], include: false }).ignores.map(function(relative) {
+  return path.resolve(relative);
+});
 
 console.log( 'watching root:' , process.cwd() );
 if (ignores.length) console.log( 'ignoring: ' , ignores.join( ',' ) )
