@@ -8,7 +8,7 @@
   },
   "dependencies": {
 
-    "colors" : ">= 0.6.0",
+    "colors" : "0.6.0",
     "watch" : ">= 0.7.0"
   },
   "keywords": [
