@@ -1,15 +1,10 @@
 {
   "name": "makeitso",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Watcher that runs make on file changes",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
-  },
-  "dependencies": {
-
-    "colors" : "0.6.0",
-    "watch" : ">= 0.7.0"
+    "build": "tsc"
   },
   "keywords": [
     "tools",
@@ -20,10 +15,19 @@
     "url": "git://github.com/divanvisagie/make-it-so"
   },
   "bin": {
-    "makeitso" : "index.js"
+    "makeitso": "ts-node index.ts"
   },
   "preferGlobal": "true",
   "author": "Divan Visagie",
   "license": "MIT",
-  "readmeFilename": "Readme.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ts-node": "^10.9.2",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/watch": "^1.0.6",
+    "typescript": "^5.4.5"
+  }
 }
